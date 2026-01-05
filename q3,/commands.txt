@@ -1,0 +1,78 @@
+-------------------------------------------------
+1.
+
+echo "Sample text" > ~/sample_data.txt
+cat sample_data.txt
+
+echo -> Creates a file named sample_data.txt and writes sample text into it.
+
+cat -> Displays the contents of the file to verify successful creation.
+-------------------------------------------------
+2.
+
+ln sample_data.txt sample_hard.txt
+
+ln -> Creates a hard link named sample_hard.txt that points to the same inode
+as sample_data.txt.
+-------------------------------------------------
+3.
+
+ln -s sample_data.txt sample_soft.txt
+
+ln -s -> Creates a symbolic (soft) link named sample_soft.txt that references
+the original file by name.
+-------------------------------------------------
+4.
+
+ls -i sample_data.txt sample_hard.txt sample_soft.txt
+
+ls -i -> Displays inode numbers for each file, allowing comparison of how
+hard and symbolic links are stored.
+-------------------------------------------------
+5.
+
+sample_data.txt and sample_hard.txt share the same inode number because
+a hard link references the same physical file data on disk.
+sample_soft.txt has a different inode because it only stores a pointer to the file name.
+-------------------------------------------------
+6.
+
+ls -l sample_data.txt
+
+ls -l -> Displays detailed metadata including file permissions, ownership,
+file size, and timestamps.
+-------------------------------------------------
+7.
+
+du -sh ~
+
+du -sh -> Displays the total disk usage of the user’s home directory in a
+human-readable format.
+-------------------------------------------------
+8.
+
+ls -lh ~
+
+ls -lh -> Lists all files and directories in the home directory along with
+their sizes in human-readable format.
+-------------------------------------------------
+9.
+
+rm sample_soft.txt
+cat sample_data.txt
+
+rm -> Deletes the symbolic link sample_soft.txt.
+
+cat -> Confirms that the original file sample_data.txt is unaffected and
+still accessible.
+-------------------------------------------------
+10.
+
+du -h ~
+df -h
+
+du -h -> Displays disk usage of directories and files in a readable format.
+
+df -h -> Shows overall filesystem disk space usage, including total size,
+used space, and available space.
+-------------------------------------------------

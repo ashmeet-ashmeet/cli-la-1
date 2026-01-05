@@ -1,0 +1,75 @@
+-------------------------------------------------
+1.
+
+uptime
+
+uptime -> Displays the total time the system has been running since the last boot,
+along with the current system load averages.
+-------------------------------------------------
+2.
+
+ps -u $USER
+
+ps -u -> Lists all processes currently running under the logged-in user account.
+-------------------------------------------------
+3.
+
+top
+
+top -> Displays real-time process information and helps identify the process
+consuming the highest CPU usage.
+-------------------------------------------------
+4.
+
+sleep 300 &
+jobs
+
+sleep & -> Starts a command in the background that runs for 300 seconds.
+
+jobs -> Lists background jobs to verify that the process is running.
+-------------------------------------------------
+5.
+
+renice 5 -p <PID>
+
+renice -> Changes the priority (niceness value) of a running process,
+adjusting how much CPU time it receives.
+-------------------------------------------------
+6.
+
+free -h
+
+free -h -> Displays memory usage statistics including total, used, and
+available RAM in human-readable format.
+-------------------------------------------------
+7.
+
+df -h ~
+
+df -h -> Displays disk space usage of the filesystem where the home directory resides.
+-------------------------------------------------
+8.
+
+echo $SHELL
+
+echo $SHELL -> Displays the name and path of the shell currently being used.
+-------------------------------------------------
+9.
+
+uname -a > system_report.txt
+cat system_report.txt
+
+uname -a -> Displays detailed system information including kernel version
+and system architecture.
+
+> -> Redirects the output into system_report.txt.
+
+cat -> Displays the contents of system_report.txt to verify successful redirection.
+-------------------------------------------------
+10.
+
+ncdu ~
+
+ncdu -> Launches an interactive disk usage analyzer that visually shows
+which directories and files are consuming disk space.
+-------------------------------------------------

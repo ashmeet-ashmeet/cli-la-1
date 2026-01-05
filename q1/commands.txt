@@ -1,0 +1,92 @@
+-------------------------------------------------
+1.
+
+whoami
+groups
+
+whoami -> Displays the username of the currently logged-in user,
+confirming the active user account.
+
+groups -> Shows all the groups that the current user belongs to, 
+indicating the user’s permissions and access rights.
+-------------------------------------------------
+2.
+
+pwd
+ls -l
+
+pwd -> Prints the absolute path of the current working directory
+in the filesystem.
+
+ls -l -> Lists files and directories in long format, displaying permissions,
+ownership, file size, and last modification time.
+
+-------------------------------------------------
+3. 
+
+echo "Linux user environment verified" > user_info.txt
+cat user_info.txt
+
+echo -> Outputs the given text and redirects it into user_info.txt, creating the file
+and writing the message to it.
+
+cat -> Displays the contents of user_info.txt, verifying that the text was written correctly.
+
+-------------------------------------------------
+4.
+
+wc -c user_info.txt
+
+wc -c -> Counts and displays the total number of bytes (characters) present in user_info.txt
+
+-------------------------------------------------
+5.
+
+man mkdir
+
+man -> Opens the manual page for the mkdir command, providing detailed information
+about its usage and options.
+
+-------------------------------------------------
+6.
+
+ls ~ | sort
+
+ls ~ | sort -> Lists the contents of the user’s home directory and sorts the output
+alphabetically using a pipe.
+
+-------------------------------------------------
+7.
+
+cat log.txt
+grep "admin" log.txt
+
+grep -> Searches through log.txt and displays only the lines that contain the word "admin".
+
+-------------------------------------------------
+8.
+
+uname -r
+
+uname -r -> Displays the version of the Linux kernel currently running on the system.
+
+-------------------------------------------------
+9.
+
+ping -c 4 www.google.com
+
+ping -> Sends four ICMP packets to www.google.com to check network connectivity
+and measure response time.
+
+-------------------------------------------------
+10.
+
+uptime
+
+uptime -> Shows how long the system has been running along with the current system load averages.
+
+- Uptime duration: Shows how long the system has been running continuously since the last boot.
+- Number of users: Indicates how many users are currently logged in to the system.
+- Load average: Represents the average system load over the last 1, 5, and 15 minutes,
+reflecting how busy the CPU is.
+-------------------------------------------------
